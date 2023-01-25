@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'HelveticaW01-Bold';
+    src: URL('/public/Helvetica\ W01\ Bold/Helvetica W01 Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'helvetica-w02-bold';
+    src: URL('/public/Helvetica\ W02\ Bold/Helvetica W02 Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'helvetica-lt-w10-bold';
+    src: URL('/public/Helvetica\ LT\ W10\ Bold/Helvetica LT W10 Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaW01-Roman';
+    src: URL('/public/Helvetica\ W01\ Roman/Helvetica W01 Roman.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaW02-Roman'; /* name of the font */
+    src: url('HelveticaW02-Roman.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HelveticaW01-Roman';
+    src: URL('/public/Helvetica\ W01\ Roman/Helvetica W01 Roman.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaLTW10-Roman';
+    src: URL('/public/Helvetica\ LT\ W10\ Roman/Helvetica LT W10 Roman.ttf') format('truetype');
+}
+
 html{
     font-size: 18px;
 }
