@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    font-size: 18px;
+}
+
+*{
+    font-family: 'HelveticaW01-Roman', cursive;
+}
+
+.fontMain{
+    font-family: 'Lobster', cursive;
+    font-weight: 900 !important;
+}
+
+.font0{
+    font: normal normal normal 22px/1.41em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
+}
+.font1{
+    font: normal normal normal 14px/1.79em "HelveticaW01-Roman","HelveticaW02-Roman","HelveticaLTW10-Roman",sans-serif;
+}
+.font2{
+    font: normal normal normal 28px/1.375em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
+}
+.font3{
+    font: normal normal normal 88px/1.2em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
+}
+.font4{
+    font:normal normal normal 72px/1.25em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
+}
+.font5{
+    font:normal normal normal 50px/1.34em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
+}
+.font6{
+    font:normal normal normal 40px/1.35em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
+}
+.font7{
+    font:normal normal normal 20px/1.67em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
+}
+.font8{
+    font:normal normal normal 16px/1.75em "HelveticaW01-Bold",cursive;
+}
+.font9{
+    font:normal normal normal 15px/1.875em "HelveticaW01-Roman","HelveticaW02-Roman","HelveticaLTW10-Roman",sans-serif;
+}
+.font9{
+    font:normal normal normal 14px/1.79em "HelveticaW01-Roman","HelveticaW02-Roman","HelveticaLTW10-Roman",sans-serif;
+}
+
+.classClose{
+    max-height: 0px;
+    overflow: hidden;
+}
+.classOpen{
+    max-height: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.answer.open {
+    max-height: 100px;
+    /* padding-bottom: 30px; */
+}
+
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22px;
+  width: 22px;
+}
+
+.nav-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  transition: all 100ms ease-in-out;
+}
+
+.nav-toggle:hover {
+  cursor: pointer;
+}
+
+.x:nth-child() {
+  transition: all 100ms ease-in-out;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 28px;
+}
+
+.x:nth-child(2) {
+  transition: all 100ms ease-in-out;
+  transform-origin: center;
+  width: 0;
+}
+
+.x:nth-child(3) {
+  transition: all 100ms ease-in-out;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  width: 28px;
+}
