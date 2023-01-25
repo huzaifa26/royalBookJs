@@ -160,16 +160,16 @@ export default function Home({ }) {
                 </div>
             </div>
 
-            <div className='xsm:w-[100%] sm:w-[100%] md:w-[63.802083333333336vw] lg:w-[63.802083333333336vw] xl:w-[63.802083333333336vw] 2xl:w-[63.802083333333336vw] m-auto flex flex-col bg-[#6581F8] pl-[24px] mb-[20px]'>
+            <div className='xsm:w-[100%] xsm:items-center sm:items-center sm:w-[100%] md:w-[63.802083333333336vw] lg:w-[63.802083333333336vw] xl:w-[63.802083333333336vw] 2xl:w-[63.802083333333336vw] m-auto flex flex-col bg-[#6581F8] xsm:pl-0 sm:pl-0 pl-[24px] mb-[20px]'>
                 <img className='w-[110px] mt-[41px]' src={LogoPreview} alt="" />
-                <h3 className='font4 tracking-normal !text-[36px] leading-[1.25em] text-white mt-[16px]'>Grow your network of clients and barbers.</h3>
+                <h3 className='font4 tracking-normal xsm:text-center sm:text-center !text-[36px] leading-[1.25em] text-white mt-[16px]'>Grow your network of clients and barbers.</h3>
                 <p className='font0 mt-[11px] text-[22px] '>Get the app today.</p>
-                <div className='flex items-center xsm:flex-col xsm:items-start'>
+                <div className='flex items-center xsm:flex-col'>
                     <a target={"_blank"} href='https://apps.apple.com/us/app/testflight/id899247664'><img className='w-[71px]' src={Safari} alt="" /></a>
                     <a target={"_blank"} href='https://testflight.apple.com/join/GhvNB40u'><img className='w-[197px] ml-[11px] xsm:ml-[-2px]' src={ApplePlay} alt="" /></a>
-                    <img className='max-w-[245.08px] xsm:ml-[-13px]' src={GooglePlay} alt="" />
+                    <img className='max-w-[215.08px] min-h-[93px] xsm:ml-[-13px]' src={GooglePlay} alt="" />
                 </div>
-                <p className='!text-[14px] font-500 text-[#33417C] mt-[8px] mb-[39px]'>For iPhone users, install TestFlight from the App Store before downloading the RoyalBook app with the button above.</p>
+                <p className='!text-[14px] xsm:text-center sm:text-center font-500 text-[#33417C] mt-[8px] mb-[39px]'>For iPhone users, install TestFlight from the App Store before downloading the RoyalBook app with the button above.</p>
             </div>
         </AnimatedPage>
     )
