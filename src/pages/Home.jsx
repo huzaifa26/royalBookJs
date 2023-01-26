@@ -98,8 +98,8 @@ export default function Home({ }) {
                     <div className='w-[393px] flex justify-center '>
                         <img className='max-w-[272px]' src={ProfileImage} alt='' />
                     </div>
-                    <div className='w-[38.216145833333336vw] xsm:w-[100%] sm:w-[100%] flex flex-col justify-center'>
-                        <div className="w-[29.8828125vw] max-w-[459px] xsm:min-w-[90%] sm:min-w-[90%] min-w-[80%] m-auto">
+                    <div className='w-[38.216145833333336vw] xsm:w-[90%] sm:w-[90%] flex flex-col justify-center'>
+                        <div className="w-[29.8828125vw] max-w-[459px] xsm:min-w-[80%] sm:min-w-[90%] min-w-[80%] m-auto">
                             <h3 className='font0 !text-[40px] mb-[42px] xsm:text-center sm:text-center'>Barbers</h3>
                             <p className='font8 w-[29.8828125vw] max-w-[459px] min-w-[90%] !text-[16px] mb-[36px] leading-[28px]'>Bring in more customers and scale your business with our in-app appointment system, and portfolio feed. Make more money while building your brand and staying productive.</p>
                             <p className='font9 w-[29.8828125vw] max-w-[459px] min-w-[90%] !text-[15px] leading-[28.125px]'>Easily set up your shop and add your services. Upload your own barber photos and link your Instagram barber account. Conveniently manage your appointments. A client appointment time created a gap in your schedule? Simply drag and drop the appointment to a more convenience time and we'll notify your client. And as you use RoyalBook, all clients that have booked with you over time will be saved in the connections folder for your convenience. Get the app today.</p>
@@ -108,8 +108,8 @@ export default function Home({ }) {
                 </div>
 
                 <div className='my-[45px] flex xsm:flex-col-reverse sm:flex-col-reverse justify-end xsm:items-center sm:items-center'>
-                    <div className='w-[38.216145833333336vw]  xsm:w-[100%] sm:w-[100%] flex flex-col justify-center'>
-                        <div className="w-[29.8828125vw] max-w-[459px] xsm:min-w-[90%] sm:min-w-[90%] min-w-[80%] m-auto">
+                    <div className='w-[38.216145833333336vw]  xsm:w-[90%] sm:w-[90%] flex flex-col justify-center'>
+                        <div className="w-[29.8828125vw] max-w-[459px] xsm:min-w-[80%] sm:min-w-[90%] min-w-[80%] m-auto">
                             <h3 className='font0 !text-[40px] mb-[42px] xsm:text-center sm:text-center'>Clients</h3>
                             <p className='font8 w-[29.8828125vw] max-w-[459px] min-w-[90%] !text-[16px] mb-[36px] leading-[28px]'>Get connected with more barbers near you and get the haircut you really want. Simply go to the feed or find barbers tab to populate barbers closest in distance from your current location. </p>
                             <p className='font9 w-[29.8828125vw] max-w-[459px] min-w-[90%] !text-[15px] leading-[28.125px]'>Use RoyalBook to connect with barbers in your city and across the nation. Save barbers' posts in the app to use as references for your next hair cut. Book, reschedule, and cancel appointments at your convenience, without having to contact your barber. Get the app today.</p>
