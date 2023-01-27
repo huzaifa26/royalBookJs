@@ -134,8 +134,8 @@ export default function FAQ({ }) {
 
   return (
     <AnimatedPage>
-      <div className='w-[63.802083333333336vw] xsm:w-[100%] sm:w-[100%] m-auto bg-[#6581F8] h-[187px] flex items-center'>
-        <h1 className='fontMain text-[72px] leading-[1.25em] tracking-normal	text-white ml-[99px] xsm:pl-[6.4453125vw] sm:pl-[6.4453125vw]'>FAQs</h1>
+      <div className='w-[63.802083333333336vw] xsm:w-[100%] sm:w-[100%] m-auto bg-[#6581F8] h-[187px] flex items-center xsm:justify-center'>
+        <h1 className='fontMain text-[72px] leading-[1.25em] tracking-normal	text-white ml-[99px] xsm:ml-0'>FAQs</h1>
       </div>
       <div className='w-[58.59375vw] xsm:w-[90%] m-auto pt-[90px] pb-[30px]'>
         <div className='flex justify-end w-[100%] xsm:w-[100%] sm:w-[100%] m-auto'>
@@ -143,7 +143,7 @@ export default function FAQ({ }) {
           <input ref={inputRef} onChange={(e) => { matchText(e.target.value);setSearch(e.target.value);}} style={showInput ? { boxShadow: "0px 0px 1px 2px #6581F8", left: "-30px", maxWidth: "1000px", flex: 1 } : { left: "-30px", maxWidth: 0 }} className='relative outline-none transition-all duration-300 indent-[40px] h-[39px] text-[14px]' placeholder='Looking for something?' />
           <img style={showInput ? { display: "block" } : { display: "none" }} onClick={() => {setsearchResults([]);setSearch("");setShowInput(false);inputRef.current.value = "" }} className=' cursor-pointer relative' src='/cross.svg' alt='' />
         </div>
-        <ul className='flex gap-[1.953125vw] xsm:gap-[10px] leading-[40px] xsm:justify-center sans font-[700]'>
+        <ul className='flex flex-wrap gap-[1.953125vw] xsm:gap-[10px] leading-[40px] sans font-[700]'>
           <NavLink to={"/faq/"} className={({ isActive }) => isActive ? "font-[900] w-[60px] text-center text-[18px] text-[#6581F8]" : "font-[900] w-[60px] text-center text-[18px]"} >
             <li className='cursor-pointer'>General</li>
           </NavLink>

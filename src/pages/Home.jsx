@@ -95,10 +95,10 @@ export default function Home({ }) {
 
             <div className='w-[63.802083333333336vw] xsm:w-[100%] sm:w-[100%] m-auto flex flex-col items-center bg-[#F5F5F5]'>
                 <div className='my-[45px] flex xsm:flex-col sm:flex-col justify-end xsm:items-center sm:items-center'>
-                    <div className='w-[393px] flex justify-center '>
+                    <div className='w-[25.5859375vw] max-w-[393px] min-w-[300px] flex justify-center '>
                         <img className='max-w-[272px]' src={ProfileImage} alt='' />
                     </div>
-                    <div className='w-[38.216145833333336vw] xsm:w-[90%] sm:w-[90%] flex flex-col justify-center'>
+                    <div className='w-[38.216145833333336vw] xsm:w-[100%] sm:w-[90%] flex flex-col justify-center'>
                         <div className="w-[29.8828125vw] max-w-[459px] xsm:min-w-[80%] sm:min-w-[90%] min-w-[80%] m-auto">
                             <h3 className='sans font-[900] !text-[40px] mb-[52px] xsm:text-center sm:text-center'>Barbers</h3>
                             <p className='sans font-[700] w-[29.8828125vw] max-w-[459px] min-w-[90%] !text-[16px] mb-[36px] tracking-[-0.01em] leading-[28px]'>Bring in more customers and scale your business with our in-app appointment system, and portfolio feed. Make more money while building your brand and staying productive.</p>
@@ -108,14 +108,14 @@ export default function Home({ }) {
                 </div>
 
                 <div className='my-[45px] flex xsm:flex-col-reverse sm:flex-col-reverse justify-end xsm:items-center sm:items-center'>
-                    <div className='w-[38.216145833333336vw]  xsm:w-[90%] sm:w-[90%] flex flex-col justify-center'>
+                    <div className='w-[38.216145833333336vw]  xsm:w-[100%] sm:w-[90%] flex flex-col justify-center'>
                         <div className="w-[29.8828125vw] max-w-[459px] xsm:min-w-[80%] sm:min-w-[90%] min-w-[80%] m-auto">
                             <h3 className='sans font-[900] !text-[40px] mb-[42px] xsm:text-center sm:text-center'>Clients</h3>
                             <p className='sans font-[700] w-[29.8828125vw] max-w-[459px] min-w-[90%] !text-[16px] mb-[36px] tracking-[-0.01em] leading-[28px]'>Get connected with more barbers near you and get the haircut you really want. Simply go to the feed or find barbers tab to populate barbers closest in distance from your current location. </p>
                             <p className='ubuntu font-[400] w-[29.8828125vw] max-w-[459px] min-w-[90%] !text-[15px] tracking-[-0.035em] leading-[28.125px]'>Use RoyalBook to connect with barbers in your city and across the nation. Save barbers' posts in the app to use as references for your next hair cut. Book, reschedule, and cancel appointments at your convenience, without having to contact your barber. Get the app today.</p>
                         </div>
                     </div>
-                    <div className='w-[393px] flex justify-center items-center'>
+                    <div className='w-[25.5859375vw] max-w-[393px] min-w-[300px] flex justify-center items-center'>
                         <img className='max-w-[272px]' src={DetailsImage} alt='' />
                     </div>
                 </div>
@@ -142,17 +142,17 @@ export default function Home({ }) {
             <div className='w-[63.802083333333336vw] xsm:w-[100%] m-auto flex flex-col bg-[#F5F5F5]'>
                 <h2 className='sans font-[900] text-[40px] leading-[1.35em] text-center mt-[42px]'>Your Next Haircut Appointment</h2>
                 <div className='flex flex-wrap xsm:justify-center sm:justify-center md:justify-center lg:justify-center px-[10px] xsm:gap-[100px] mt-[60px] mb-[68px]'>
-                    <div className='w-[20.703125vw] min-w-[310px] xsm:mb-[68px] sm:mb-[68px] md:mb-[68px] lg:mb-[68px]'>
+                    <div className='w-[20.703125vw] min-w-[310px]'>
                         <img className='w-[147px] m-auto' src={Appointment1} alt="" />
                         <h3 className='sans font-[900]  !text-[22px] leading-[1.41em] text-center mt-[39px] w-[277px] m-auto'>DISCOVER BARBERS</h3>
                         <p className='ubuntu font-[400] !text-[15px] leading-[1.875em] w-[277px] mt-[37px] tracking-[-0.03em] m-auto'>Set your search radius by sliding the 'Distance' bar anywhere up to 30 miles away. Then look for barbers to book with based on reviews and total connections they have on their profile. Connect with talented barbers anywhere, anytime!</p>
                     </div>
-                    <div className='w-[20.703125vw] min-w-[310px] xsm:mt-[60px] xsm:mb-[68px] sm:mt-[60px] sm:mb-[68px] md:mt-[60px] md:mb-[68px] lg:mt-[60px] lg:mb-[68px]'>
+                    <div className='w-[20.703125vw] min-w-[310px] xsm:mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px]'>
                         <img className='w-[147px] m-auto' src={Appointment2} alt="" />
                         <h3 className='sans font-[900] !text-[22px] leading-[1.41em] text-center mt-[39px] w-[277px] m-auto'>EXPLORE FEED</h3>
                         <p className='ubuntu font-[400] !text-[15px] leading-[1.875em] w-[277px] mt-[42px] tracking-[-0.03em] m-auto'>RoyalBook allows barbers to upload photos of their work. Once uploaded, these photos populate onto the feed for nearby clients to browse through. This is just another way for barbers to market their business to potential customers looking for the right barber!</p>
                     </div>
-                    <div className='w-[20.703125vw] min-w-[310px] xsm:mt-[60px] sm:mt-[60px] md:mt-[60px] lg:mt-[60px]'>
+                    <div className='w-[20.703125vw] min-w-[310px] xsm:mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px]'>
                         <img className='w-[147px] m-auto' src={Appointment3} alt="" />
                         <h3 className='sans font-[900] !text-[22px] leading-[1.41em] text-center mt-[39px] w-[277px] m-auto'>HAIRCUT REMINDER</h3>
                         <p className='ubuntu font-[400] !text-[15px] leading-[1.875em] w-[277px] mt-[42px] tracking-[-0.03em] m-auto'>Clients are automatically sent reminder notifications a couple hours prior to their appointment. These automated notifications come in handy when unexpected things happen that make clients forget about their haircut appointment they booked.</p>
