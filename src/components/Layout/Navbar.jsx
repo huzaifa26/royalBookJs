@@ -9,7 +9,7 @@ export default function Navbar({ }) {
     return (
         <>
             <div style={showNavMob ? { maxHeight: "10000px" } : { maxHeight: "0px" }} className='transition-all duration-300 fixed min-w-[100%] bg-[#fff] z-20 h-full'>
-                {showNavMob&&<ul className='font1 relative top-[140px] flex flex-col gap-[20px] items-center'>
+                {showNavMob&&<ul className='sans font-[700] relative top-[140px] flex flex-col gap-[20px] items-center'>
                     <NavLink onClick={() => setNavMob(false)} className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[14px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[14px]"} to={"/"}>
                         <li>Home</li>
                     </NavLink>
@@ -25,7 +25,7 @@ export default function Navbar({ }) {
                         <h1 className='fontMain'>RoyalBook</h1>
                     </div>
                     <div>
-                        <ul className='font1 flex ml-[-155px] xsm:hidden sm:hidden'>
+                        <ul className='sans font-[700] flex ml-[-155px] xsm:hidden sm:hidden'>
                             <NavLink className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[14px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[14px]"} to={"/"}>
                                 <li>Home</li>
                             </NavLink>

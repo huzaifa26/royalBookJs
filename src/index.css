@@ -5,22 +5,22 @@
 
 @font-face {
     font-family: 'HelveticaW01-Bold';
-    src: URL('/public/Helvetica\ W01\ Bold/Helvetica W01 Bold.ttf') format('truetype');
+    src: URL('/Helvetica\ W01\ Bold/Helvetica W01 Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'helvetica-w02-bold';
-    src: URL('/public/Helvetica\ W02\ Bold/Helvetica W02 Bold.ttf') format('truetype');
+    src: URL('/Helvetica\ W02\ Bold/Helvetica W02 Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'helvetica-lt-w10-bold';
-    src: URL('/public/Helvetica\ LT\ W10\ Bold/Helvetica LT W10 Bold.ttf') format('truetype');
+    src: URL('/Helvetica\ LT\ W10\ Bold/Helvetica LT W10 Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'HelveticaW01-Roman';
-    src: URL('/public/Helvetica\ W01\ Roman/Helvetica W01 Roman.ttf') format('truetype');
+    src: URL('/Helvetica\ W01\ Roman/Helvetica W01 Roman.ttf') format('truetype');
 }
 
 @font-face {
@@ -30,12 +30,12 @@
 
 @font-face {
     font-family: 'HelveticaW01-Roman';
-    src: URL('/public/Helvetica\ W01\ Roman/Helvetica W01 Roman.ttf') format('truetype');
+    src: URL('/Helvetica\ W01\ Roman/Helvetica W01 Roman.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'HelveticaLTW10-Roman';
-    src: URL('/public/Helvetica\ LT\ W10\ Roman/Helvetica LT W10 Roman.ttf') format('truetype');
+    src: URL('/Helvetica\ LT\ W10\ Roman/Helvetica LT W10 Roman.ttf') format('truetype');
 }
 
 html{
@@ -43,47 +43,24 @@ html{
 }
 
 *{
-    font-family: 'HelveticaW01-Roman', cursive;
+    font-family: "Source Sans Pro",sans-serif;
 }
 
 .fontMain{
-    font-family: 'Lobster', cursive;
+    font-family: 'Oleo Script', cursive;
     font-weight: 900 !important;
 }
+/* font-family: 'Source Sans Pro', sans-serif; */
 
-.font0{
-    font: normal normal normal 22px/1.41em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
+
+.sans{
+    font: "Source Sans Pro",sans-serif;
 }
-.font1{
-    font: normal normal normal 14px/1.79em "HelveticaW01-Roman","HelveticaW02-Roman","HelveticaLTW10-Roman",sans-serif;
+
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif !important;
 }
-.font2{
-    font: normal normal normal 28px/1.375em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
-}
-.font3{
-    font: normal normal normal 88px/1.2em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
-}
-.font4{
-    font:normal normal normal 72px/1.25em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
-}
-.font5{
-    font:normal normal normal 50px/1.34em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
-}
-.font6{
-    font:normal normal normal 40px/1.35em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
-}
-.font7{
-    font:normal normal normal 20px/1.67em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
-}
-.font8{
-    font:normal normal normal 16px/1.75em "HelveticaW01-Bold","helvetica-w02-bold","helvetica-lt-w10-bold",sans-serif;
-}
-.font9{
-    font:normal normal normal 15px/1.875em "HelveticaW01-Roman","HelveticaW02-Roman","HelveticaLTW10-Roman",sans-serif;
-}
-.font9{
-    font:normal normal normal 14px/1.79em "HelveticaW01-Roman","HelveticaW02-Roman","HelveticaLTW10-Roman",sans-serif;
-}
+
 
 .classClose{
     max-height: 0px;

@@ -13,14 +13,14 @@ export default function Footer({}) {
         </div>
         <div className='w-[300px] flex justify-around mt-[23px]'>
           {/* <Link to={"/privacy"}> */}
-            <p className='font0 flex-1 !text-[12px] underline text-center cursor-pointer'>Privacy Policy</p>
+            <p className='sans font-[700] flex-1 !text-[12px] underline text-center cursor-pointer'>Privacy Policy</p>
           {/* </Link> */}
           {/* <Link to={"/term"}> */}
-            <p className='font0 flex-1 !text-[12px] underline text-center cursor-pointer'>Terms of Service</p>
+            <p className='sans font-[700] flex-1 !text-[12px] underline text-center cursor-pointer'>Terms of Service</p>
           {/* </Link> */}
         </div>
-        <button className='font9 w-[142px] h-[40px] rounded-full border-[1px] border-black !text-[15px] mt-[25px] hover:bg-black hover:text-white transition-all duration-[0.4s]'><a className='cursor-pointer' href="mailto:support@royalbookapp.com">Contact Us</a></button>
-        <p className='text-[12px] text-center mt-[36px] font-bold h-[14px] my-[8px]'>© {date} by RoyalBook</p>
+        <button className='sans font-[600] w-[142px] h-[40px] rounded-full border-[1px] border-black !text-[15px] mt-[25px] hover:bg-black hover:text-white transition-all duration-[0.4s]'><a className='cursor-pointer' href="mailto:support@royalbookapp.com">Contact Us</a></button>
+        <p className='text-[12px] text-center mt-[36px] sans font-[700] tracking-[0.05em] h-[14px] my-[8px]'>© {date} by RoyalBook</p>
     </div>
   )
 }
