@@ -8,12 +8,12 @@ export default function Navbar({ }) {
 
     return (
         <>
-            <div style={showNavMob ? { maxHeight: "10000px" } : { maxHeight: "0px" }} className='transition-all duration-300 fixed min-w-[100%] bg-[#fff] z-20 h-[35%] shadow-md'>
+            <div style={showNavMob ? { maxHeight: "10000px" } : { maxHeight: "0px" }} className='transition-all duration-300 fixed min-w-[100%] bg-[#fff] z-20 h-[37%] shadow-md'>
                 {showNavMob&&<ul className='sans font-[700] relative top-[140px] flex flex-col gap-[20px] items-center'>
-                    <NavLink onClick={() => setNavMob(false)} className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[18px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[14px]"} to={"/"}>
+                    <NavLink onClick={() => setNavMob(false)} className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[18px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[18px]"} to={"/"}>
                         <li>Home</li>
                     </NavLink>
-                    <NavLink onClick={() => setNavMob(false)} className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[18px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[14px]"} to={"/faq"}>
+                    <NavLink onClick={() => setNavMob(false)} className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[18px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[18px]"} to={"/faq"}>
                         <li>FAQs</li>
                     </NavLink>
                 </ul>}
@@ -33,10 +33,10 @@ export default function Navbar({ }) {
                                 <li>FAQs</li>
                             </NavLink>
                         </ul>
-                        <ul style={showNavMob ? { gap: "0px" } : {}} onClick={() => setNavMob(!showNavMob)} className='hidden w-[20px] xsm:flex sm:flex gap-[5px] flex-col cursor-pointer relative z-40'>
-                            <div style={showNavMob ? { transform: "rotate(45deg)", top: "3px" } : {}} className=' bg-black relative min-w-[30] border-[1px] border-black rounded-full transition-all'></div>
-                            <div style={showNavMob ? { visibility: "hidden" } : {}} className=' bg-black min-w-[30] border-[1px] border-black rounded-full transition-all'></div>
-                            <div style={showNavMob ? { transform: "rotate(-45deg)" } : {}} className=' bg-black min-w-[30] border-[1px] border-black rounded-full transition-all'></div>
+                        <ul style={showNavMob ? { gap: "0px" } : {}} onClick={() => setNavMob(!showNavMob)} className='hidden w-[30px] xsm:flex sm:flex gap-[7px] flex-col cursor-pointer relative z-40'>
+                            <div style={showNavMob ? { transform: "rotate(45deg)", top: "6px" } : {}} className=' bg-black relative min-w-[30] border-[2px] border-black rounded-full transition-all'></div>
+                            <div style={showNavMob ? { visibility: "hidden" } : {}} className=' bg-black min-w-[30] border-[2px] border-black rounded-full transition-all'></div>
+                            <div style={showNavMob ? { transform: "rotate(-45deg)" } : {}} className=' bg-black min-w-[30] border-[2px] border-black rounded-full transition-all'></div>
                         </ul>
                     </div>
                 </div>
