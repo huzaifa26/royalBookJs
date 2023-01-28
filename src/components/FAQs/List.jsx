@@ -16,7 +16,7 @@ export default function List({ data, index }) {
             </div>
             <div className={`answer ${isOpen ? "open" : "closed"}`}>
                 {/* <p className='text-[14px] leading-[1.2em] font-[300]' dangerouslySetInnerHTML={{__html: data.description}}></p> */}
-                <p style={{fontFamily:"Source Sans Pro"}} className='!ubuntu font-[400] !text-[14px] leading-[1.2em] '>{data.description}</p>
+                <p style={{fontFamily:"Source Sans Pro"}} className='!ubuntu font-[400] !text-[14px] leading-[1.2em] w-[92%]'>{data.description}</p>
                 <p className='h-[30px]'></p>
             </div>
         </div>

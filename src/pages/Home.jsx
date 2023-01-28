@@ -71,18 +71,18 @@ export default function Home({ }) {
     return (
         <AnimatedPage>
             <div className='bg-[#6581F8]'>
-                <div className='w-[63.802083333333336vw] m-auto flex xsm:flex-col xsm:items-center sm:flex-col sm:items-center h-full'>
+                <div className=' md:w-[63.802083333333336vw] xsm:w-[100%] w-[980px] sm:w-[100%] m-auto flex xsm:flex-col xsm:items-center sm:flex-col sm:items-center h-full'>
                     <div className='w-[35.091145833333336vw] flex flex-col items-center'>
-                        <h2 className='fontMain text-[clamp(60px,5.208333333333333vw,80px)] text-white xsm:mt-[10px] mt-[108px] mb-[2px]'>RoyalBook</h2>
-                        <h3 className='sans w-[32.096354166666664vw] max-w-[493px] text-center min-w-[300px] !font-[900] !text-[24px] tracking-[0.11em] leading-[33.6px]'>Build your business the Royal way</h3>
-                        <p className='sans font-[600] w-[32.096354166666664vw] min-w-[310px] max-w-[493px] text-[#33417c] !text-center !text-[18px] mt-[32px] mb-[41px] tracking-[0.02em] !leading-[23.4px] font7'>A social media booking platform tailored for barbers to connect with others in the industry. Clients can find nearby barbers and book appointments directly through the app.</p>
-                        <p className='text-white text-[18px] xsm:text-center sm:text-center'>Try the beta app</p>
+                        <h2 className='fontMain text-[clamp(60px,5.208333333333333vw,80px)] xsm:text-[32px] text-white xsm:mt-[30px] mt-[108px] mb-[2px]'>RoyalBook</h2>
+                        <h3 className='sans w-[32.096354166666664vw] max-w-[493px] text-center min-w-[300px] !font-[900] text-[24px] xsm:text-[18px] xsm:tracking-[0.04em] tracking-[0.11em] leading-[33.6px]'>Build your business the Royal way</h3>
+                        <p className='sans font-[600] w-[32.096354166666664vw] min-w-[310px] max-w-[493px] text-[#33417c] !text-center text-[18px] xsm:text-[15px] xsm:mt-[15px] mt-[32px] xsm:mb-[22px] mb-[41px] tracking-[0.02em] !leading-[23.4px] font7'>A social media booking platform tailored for barbers to connect with others in the industry. Clients can find nearby barbers and book appointments directly through the app.</p>
+                        <p className='text-white xsm:text-[15px] mb-[5px] text-[18px] xsm:text-center sm:text-center'>Try the beta app</p>
                         <div className='flex xsm:flex-col mt-[3.5px] mb-[5.5px] justify-center items-center'>
                             <a target={"_blank"} href='https://testflight.apple.com/join/GhvNB40u'><img className='min-w-[197.66px] ' src={ApplePlay} alt="" /></a>
                             <a target={"_blank"} href='https://testflight.apple.com/join/GhvNB40u'><img className='max-w-[216px] min-h-[93px] max-h-[150.12px]' src={GooglePlay} alt="" /></a>
                         </div>
                         <p className='sans font-[600] text-[#33417c] mb-[14px] !text-[16px]'>Learn more</p>
-                        <div className='relative z-10 mb-[10px] mt-[-16px]'>
+                        <div className='relative z-10  mt-[-16px]'>
                             <img className='rotate-90' src={DownArrow} alt="" />
                             <img className='rotate-90 relative top-[-27px]' src={DownArrow} alt="" />
                         </div>
@@ -93,7 +93,7 @@ export default function Home({ }) {
                 </div>
             </div>
  
-            <div className='w-[63.802083333333336vw] xsm:w-[100%] sm:w-[100%] md:w-[100%] m-auto flex flex-col items-center bg-[#F5F5F5]'>
+            <div className=' md:w-[63.802083333333336vw] xsm:w-[100%] w-[980px] sm:w-[100%] m-auto flex flex-col items-center bg-[#F5F5F5]'>
                 <div className='my-[45px] flex xsm:flex-col sm:flex-col justify-end xsm:items-center sm:items-center'>
                     <div className='w-[25.5859375vw] max-w-[393px] min-w-[300px] flex justify-center '>
                         <img className='max-w-[272px]' src={ProfileImage} alt='' />
@@ -102,7 +102,7 @@ export default function Home({ }) {
                         <div className="w-[29.8828125vw] xsm:w-[90vw] sm:w-[90vw] max-w-[459px] xsm:min-w-[80%] sm:min-w-[90%] min-w-[80%] m-auto">
                             <h3 className='sans font-[900] !text-[40px] mb-[52px] xsm:text-center sm:text-center'>Barbers</h3>
                             <p className='sans font-[700] w-[29.8828125vw] max-w-[459px] min-w-[100%] !text-[16px] mb-[36px] tracking-[-0.01em] leading-[28px]'>Bring in more customers and scale your business with our in-app appointment system, and portfolio feed. Make more money while building your brand and staying productive.</p>
-                            <p className='ubuntu font-[400] w-[29.8828125vw] max-w-[459px] min-w-[100%] !text-[15px] tracking-[-0.02em] leading-[28.125px]'>Easily set up your shop and add your services. Upload your own barber photos and link your Instagram barber account. Conveniently manage your appointments. A client appointment time created a gap in your schedule? Simply drag and drop the appointment to a more convenience time and we'll notify your client. And as you use RoyalBook, all clients that have booked with you over time will be saved in the connections folder for your convenience. Get the app today.</p>
+                            <p className='ubuntu font-[400] w-[29.8828125vw] max-w-[459px] min-w-[100%] text-[15px] tracking-[-0.02em] leading-[28.125px]'>Easily set up your shop and add your services. Upload your own barber photos and link your Instagram barber account. Conveniently manage your appointments. A client appointment time created a gap in your schedule? Simply drag and drop the appointment to a more convenience time and we'll notify your client. And as you use RoyalBook, all clients that have booked with you over time will be saved in the connections folder for your convenience. Get the app today.</p>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ export default function Home({ }) {
                 </div>
             </div>
 
-            <div className='w-[63.802083333333336vw] m-auto flex flex-col'>
+            <div className=' md:w-[63.802083333333336vw] xsm:w-[100%] w-[980px] sm:w-[100%] m-auto flex flex-col'>
                 <div className='flex xsm:flex-col sm:flex-col md:flex-col mt-[50px] xsm:items-center xsm:gap-[50px] sm:items-center sm:gap-[50px] md:items-center md:gap-[50px]'>
                     {data.map((d) => {
                         return (
@@ -139,28 +139,28 @@ export default function Home({ }) {
                 </div>
             </div>
 
-            <div className='w-[63.802083333333336vw] xsm:w-[100%] m-auto flex flex-col bg-[#F5F5F5]'>
+            <div className=' md:w-[63.802083333333336vw] xsm:w-[100%] w-[980px] sm:w-[100%] m-auto flex flex-col bg-[#F5F5F5]'>
                 <h2 className='sans font-[900] text-[40px] leading-[1.35em] text-center mt-[42px]'>Your Next Haircut Appointment</h2>
                 <div className='flex flex-wrap xsm:justify-center sm:justify-center md:justify-center lg:justify-center px-[10px] xsm:gap-[100px] mt-[60px] mb-[68px]'>
                     <div className='w-[20.703125vw] min-w-[310px]'>
                         <img className='w-[147px] m-auto' src={Appointment1} alt="" />
                         <h3 className='sans font-[900]  !text-[22px] leading-[1.41em] text-center mt-[39px] w-[277px] m-auto'>DISCOVER BARBERS</h3>
-                        <p className='ubuntu font-[400] !text-[15px] leading-[1.875em] w-[277px] mt-[37px] tracking-[-0.03em] m-auto'>Set your search radius by sliding the 'Distance' bar anywhere up to 30 miles away. Then look for barbers to book with based on reviews and total connections they have on their profile. Connect with talented barbers anywhere, anytime!</p>
+                        <p className='ubuntu font-[400] !text-[15px] leading-[1.875em] w-[277px] xsm:w-[100%] mt-[37px] tracking-[-0.03em] m-auto'>Set your search radius by sliding the 'Distance' bar anywhere up to 30 miles away. Then look for barbers to book with based on reviews and total connections they have on their profile. Connect with talented barbers anywhere, anytime!</p>
                     </div>
-                    <div className='w-[20.703125vw] min-w-[310px] xsm:mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px]'>
+                    <div className='w-[20.703125vw] min-w-[310px] xsm:mt-[0px]'>
                         <img className='w-[147px] m-auto' src={Appointment2} alt="" />
                         <h3 className='sans font-[900] !text-[22px] leading-[1.41em] text-center mt-[39px] w-[277px] m-auto'>EXPLORE FEED</h3>
-                        <p className='ubuntu font-[400] !text-[15px] leading-[1.875em] w-[277px] mt-[42px] tracking-[-0.03em] m-auto'>RoyalBook allows barbers to upload photos of their work. Once uploaded, these photos populate onto the feed for nearby clients to browse through. This is just another way for barbers to market their business to potential customers looking for the right barber!</p>
+                        <p className='ubuntu font-[400] !text-[15px] leading-[1.875em] w-[277px] xsm:w-[100%] mt-[42px] tracking-[-0.03em] m-auto'>RoyalBook allows barbers to upload photos of their work. Once uploaded, these photos populate onto the feed for nearby clients to browse through. This is just another way for barbers to market their business to potential customers looking for the right barber!</p>
                     </div>
-                    <div className='w-[20.703125vw] min-w-[310px] xsm:mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px]'>
+                    <div className='w-[20.703125vw] min-w-[310px] xsm:mt-[0px]'>
                         <img className='w-[147px] m-auto' src={Appointment3} alt="" />
                         <h3 className='sans font-[900] !text-[22px] leading-[1.41em] text-center mt-[39px] w-[277px] m-auto'>HAIRCUT REMINDER</h3>
-                        <p className='ubuntu font-[400] !text-[15px] leading-[1.875em] w-[277px] mt-[42px] tracking-[-0.03em] m-auto'>Clients are automatically sent reminder notifications a couple hours prior to their appointment. These automated notifications come in handy when unexpected things happen that make clients forget about their haircut appointment they booked.</p>
+                        <p className='ubuntu font-[400] !text-[15px] leading-[1.875em] w-[277px] xsm:w-[100%] mt-[42px] tracking-[-0.03em] m-auto'>Clients are automatically sent reminder notifications a couple hours prior to their appointment. These automated notifications come in handy when unexpected things happen that make clients forget about their haircut appointment they booked.</p>
                     </div>
                 </div>
             </div>
 
-            <div className='xsm:w-[100%] xsm:items-center sm:items-center sm:w-[100%] md:w-[63.802083333333336vw] lg:w-[63.802083333333336vw] xl:w-[63.802083333333336vw] 2xl:w-[63.802083333333336vw] m-auto flex flex-col bg-[#6581F8] xsm:pl-0 sm:pl-0 pl-[24px] mb-[20px]'>
+            <div className='md:w-[63.802083333333336vw] xsm:w-[100%] w-[980px] sm:w-[100%] xsm:items-center sm:items-center m-auto flex flex-col bg-[#6581F8] xsm:pl-0 sm:pl-0 pl-[24px] mb-[20px]'>
                 <img className='w-[110px] mt-[41px]' src={LogoPreview} alt="" />
                 <h3 className='sans font-[900] tracking-normal xsm:text-center sm:text-center !text-[36px] leading-[1.25em] text-white mt-[16px]'>Grow your network of clients and barbers.</h3>
                 <p className='sans font-[900]    mt-[11px] text-[22px] '>Get the app today.</p>

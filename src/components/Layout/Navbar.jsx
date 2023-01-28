@@ -8,7 +8,7 @@ export default function Navbar({ }) {
 
     return (
         <>
-            <div style={showNavMob ? { maxHeight: "10000px" } : { maxHeight: "0px" }} className='transition-all duration-300 fixed min-w-[100%] bg-[#fff] z-20 h-[37%] shadow-md'>
+            <div style={showNavMob ? { maxHeight: "10000px" } : { maxHeight: "0px" }} className='transition-all duration-300 fixed min-w-[100%] bg-[#fff] z-20 h-[250px] shadow-md'>
                 {showNavMob&&<ul className='sans font-[700] relative top-[140px] flex flex-col gap-[20px] items-center'>
                     <NavLink onClick={() => setNavMob(false)} className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[18px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[18px]"} to={"/"}>
                         <li>Home</li>
@@ -19,7 +19,7 @@ export default function Navbar({ }) {
                 </ul>}
             </div>
             <div className='sticky top-0 z-20 bg-white'>
-                <div className=' w-[63.802083333333336vw] xsm:w-[90%] sm:w-[90%] flex items-center justify-between m-auto h-[124px] pt-[20px]'>
+                <div className=' w-[63.802083333333336vw] xsm:w-[90%] sm:w-[90%] flex items-center justify-between m-auto h-[124px] xsm:h-[104px] sm:h-[104px] xsm:pt-0 sm:pt-0 pt-[20px]'>
                     <div className='flex items-center text-[35px] leading-[1.25em]'>
                         <img className='max-w-[51px] max-h-[49px]' src={"./IconForeground.png"} alt='' />
                         <h1 className='fontMain'>RoyalBook</h1>
