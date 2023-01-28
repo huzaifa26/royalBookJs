@@ -10,10 +10,10 @@ export default function Navbar({ }) {
         <>
             <div style={showNavMob ? { maxHeight: "10000px" } : { maxHeight: "0px" }} className='transition-all duration-300 fixed min-w-[100%] bg-[#fff] z-20 h-[35%] shadow-md'>
                 {showNavMob&&<ul className='sans font-[700] relative top-[140px] flex flex-col gap-[20px] items-center'>
-                    <NavLink onClick={() => setNavMob(false)} className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[14px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[14px]"} to={"/"}>
+                    <NavLink onClick={() => setNavMob(false)} className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[18px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[14px]"} to={"/"}>
                         <li>Home</li>
                     </NavLink>
-                    <NavLink onClick={() => setNavMob(false)} className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[14px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[14px]"} to={"/faq"}>
+                    <NavLink onClick={() => setNavMob(false)} className={({ isActive }) => isActive ? "font0 w-[60px] text-center !text-[18px] text-[#6581F8]" : "font0 w-[60px] text-center !text-[14px]"} to={"/faq"}>
                         <li>FAQs</li>
                     </NavLink>
                 </ul>}
