@@ -73,12 +73,12 @@ export default function Home({ }) {
             <div className='bg-[#6581F8]'>
                 <div className='w-[63.802083333333336vw] m-auto flex xsm:flex-col xsm:items-center sm:flex-col sm:items-center h-full'>
                     <div className='w-[35.091145833333336vw] flex flex-col items-center'>
-                        <h2 className='fontMain text-[clamp(60px,5.208333333333333vw,80px)] text-white mt-[108px] mb-[2px]'>RoyalBook</h2>
+                        <h2 className='fontMain text-[clamp(60px,5.208333333333333vw,80px)] text-white xsm:mt-[10px] mt-[108px] mb-[2px]'>RoyalBook</h2>
                         <h3 className='sans w-[32.096354166666664vw] max-w-[493px] text-center min-w-[300px] !font-[900] !text-[24px] tracking-[0.11em] leading-[33.6px]'>Build your business the Royal way</h3>
                         <p className='sans font-[600] w-[32.096354166666664vw] min-w-[310px] max-w-[493px] text-[#33417c] !text-center !text-[18px] mt-[32px] mb-[41px] tracking-[0.02em] !leading-[23.4px] font7'>A social media booking platform tailored for barbers to connect with others in the industry. Clients can find nearby barbers and book appointments directly through the app.</p>
                         <p className='text-white text-[18px] xsm:text-center sm:text-center'>Try the beta app</p>
                         <div className='flex xsm:flex-col mt-[3.5px] mb-[5.5px] justify-center items-center'>
-                            <a target={"_blank"} href='https://testflight.apple.com/join/GhvNB40u'><img src={ApplePlay} alt="" /></a>
+                            <a target={"_blank"} href='https://testflight.apple.com/join/GhvNB40u'><img className='min-w-[197.66px] ' src={ApplePlay} alt="" /></a>
                             <a target={"_blank"} href='https://testflight.apple.com/join/GhvNB40u'><img className='max-w-[216px] min-h-[93px] max-h-[150.12px]' src={GooglePlay} alt="" /></a>
                         </div>
                         <p className='sans font-[600] text-[#33417c] mb-[14px] !text-[16px]'>Learn more</p>
@@ -87,19 +87,19 @@ export default function Home({ }) {
                             <img className='rotate-90 relative top-[-27px]' src={DownArrow} alt="" />
                         </div>
                     </div>
-                    <div className='flex justify-center items-center flex-1'>
+                    <div className='flex xsm:hidden sm:hidden justify-center items-center flex-1'>
                         <img className='max-w-[253px]' src={LoginIcon} alt='' />
                     </div>
                 </div>
             </div>
-
-            <div className='w-[63.802083333333336vw] xsm:w-[100%] sm:w-[100%] m-auto flex flex-col items-center bg-[#F5F5F5]'>
+ 
+            <div className='w-[63.802083333333336vw] xsm:w-[100%] sm:w-[100%] md:w-[100%] m-auto flex flex-col items-center bg-[#F5F5F5]'>
                 <div className='my-[45px] flex xsm:flex-col sm:flex-col justify-end xsm:items-center sm:items-center'>
                     <div className='w-[25.5859375vw] max-w-[393px] min-w-[300px] flex justify-center '>
                         <img className='max-w-[272px]' src={ProfileImage} alt='' />
                     </div>
                     <div className='w-[38.216145833333336vw] min-w-[300px] xsm:w-[100%] sm:w-[90%] flex flex-col justify-center'>
-                        <div className="w-[29.8828125vw] max-w-[459px] xsm:min-w-[80%] sm:min-w-[90%] min-w-[80%] m-auto">
+                        <div className="w-[29.8828125vw] xsm:w-[90vw] sm:w-[90vw] max-w-[459px] xsm:min-w-[80%] sm:min-w-[90%] min-w-[80%] m-auto">
                             <h3 className='sans font-[900] !text-[40px] mb-[52px] xsm:text-center sm:text-center'>Barbers</h3>
                             <p className='sans font-[700] w-[29.8828125vw] max-w-[459px] min-w-[100%] !text-[16px] mb-[36px] tracking-[-0.01em] leading-[28px]'>Bring in more customers and scale your business with our in-app appointment system, and portfolio feed. Make more money while building your brand and staying productive.</p>
                             <p className='ubuntu font-[400] w-[29.8828125vw] max-w-[459px] min-w-[100%] !text-[15px] tracking-[-0.02em] leading-[28.125px]'>Easily set up your shop and add your services. Upload your own barber photos and link your Instagram barber account. Conveniently manage your appointments. A client appointment time created a gap in your schedule? Simply drag and drop the appointment to a more convenience time and we'll notify your client. And as you use RoyalBook, all clients that have booked with you over time will be saved in the connections folder for your convenience. Get the app today.</p>
@@ -109,7 +109,7 @@ export default function Home({ }) {
 
                 <div className='my-[45px] flex xsm:flex-col-reverse sm:flex-col-reverse justify-end xsm:items-center sm:items-center'>
                     <div className='w-[38.216145833333336vw] min-w-[300px] xsm:w-[100%] sm:w-[90%] flex flex-col justify-center'>
-                        <div className="w-[29.8828125vw] max-w-[459px] xsm:min-w-[80%] sm:min-w-[90%] min-w-[80%] m-auto">
+                        <div className="w-[29.8828125vw] xsm:w-[90vw] sm:w-[90vw] max-w-[459px] xsm:min-w-[80%] sm:min-w-[90%] min-w-[80%] m-auto">
                             <h3 className='sans font-[900] !text-[40px] mb-[42px] xsm:text-center sm:text-center'>Clients</h3>
                             <p className='sans font-[700] w-[29.8828125vw] max-w-[459px] min-w-[100%] !text-[16px] mb-[36px] tracking-[-0.01em] leading-[28px]'>Get connected with more barbers near you and get the haircut you really want. Simply go to the feed or find barbers tab to populate barbers closest in distance from your current location. </p>
                             <p className='ubuntu font-[400] w-[29.8828125vw] max-w-[459px] min-w-[100%] !text-[15px] tracking-[-0.035em] leading-[28.125px]'>Use RoyalBook to connect with barbers in your city and across the nation. Save barbers' posts in the app to use as references for your next hair cut. Book, reschedule, and cancel appointments at your convenience, without having to contact your barber. Get the app today.</p>
