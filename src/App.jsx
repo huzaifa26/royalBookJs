@@ -11,11 +11,12 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import AnimatedPage from "./components/Layout/AnimatedPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
     <div className="w-[calc(100vw - 100%)] m-auto">
-      
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
@@ -30,6 +31,8 @@ function App() {
             {/* <Route path='privacy' element={<AnimatedPage><PrivacyPolicy /></AnimatedPage>}></Route> */}
             {/* <Route path='term' element={<AnimatedPage><Terms /></AnimatedPage>}></Route> */}
           </Route>
+          <Route path='login' element={<Login />}></Route>
+          <Route path='signup' element={<Signup />}></Route>
         </Routes>
       </BrowserRouter >
     </div >
