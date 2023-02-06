@@ -13,11 +13,11 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import ScrollToTop from "./components/Utils/ScrollToTop";
 
 function App() {
   return (
     <div className="w-[calc(100vw - 100%)] m-auto">
-      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<AnimatedPage><Home /></AnimatedPage>}></Route>
@@ -34,7 +34,6 @@ function App() {
           <Route path='login' element={<Login />}></Route>
           <Route path='signup' element={<Signup />}></Route>
         </Routes>
-      </BrowserRouter >
     </div >
   )
 }

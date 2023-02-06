@@ -6,10 +6,10 @@ export default function Footer({}) {
   return (
     <div className=' w-[63.802083333333336vw] m-auto flex mt-[34px] items-center flex-col'>
         <div className='flex w-[245px] justify-between items-center'>
-            <img src={"./facebook.svg"} alt=''/>
-            <img src={"./instagram.svg"} alt=''/>
-            <img src={"./tiktok.svg"} alt=''/>
-            <img src={"./twitter.svg"} alt=''/>
+          <a className='focus:border-[3px] w-[35px] h-[35px] flex justify-center items-center border-[#6581F8]' target={"_blank"} href='https://www.facebook.com/royalbookapp'><img src={"./facebook.svg"} alt=''/></a>
+          <a className='focus:border-[3px] w-[35px] h-[35px] flex justify-center items-center border-[#6581F8]' target={"_blank"} href='https://www.instagram.com/royalbookapp/'><img src={"./instagram.svg"} alt=''/></a>
+          <a className='focus:border-[3px] w-[35px] h-[35px] flex justify-center items-center border-[#6581F8]' target={"_blank"} href='https://www.tiktok.com/@royalbookapp'><img src={"./tiktok.svg"} alt=''/></a>
+          <a className='focus:border-[3px] w-[35px] h-[35px] flex justify-center items-center border-[#6581F8]' target={"_blank"} href='https://twitter.com/royalbookapp'><img src={"./twitter.svg"} alt=''/></a>
         </div>
         <div className='w-[300px] flex justify-around mt-[23px]'>
           <Link to={"/privacy"}>

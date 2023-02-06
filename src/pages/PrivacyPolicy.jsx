@@ -16,6 +16,7 @@ export default function PrivacyPolicy() {
                 <p className='mb-[21px] text-[14px] ubuntu leading-[21px] tracking-[0px]'>RoyalBook owns and operates this <a className='underline' href='https://www.royalbookapp.com'>https://www.royalbookapp.com</a> website and software application. All references to “we”, “us”, or this “website” shall be construed to mean RoyalBook, its URL, its mobile application software, or other related user interfaces. Your privacy is important to us; accordingly, we follow the following practices: </p>
                 <h3 className='sans font-bold text-[14px] leading-[1.5em] mb-[23px]'>OUR COMMITMENT TO PRIVACY</h3>
                 <p className='mb-[23px] text-[14px] ubuntu leading-[21px] tracking-[0px]'>Your privacy is important to us.  To better protect your privacy, we provide this policy explaining our online information practices and the choices you can make about the way your information is collected and used.  To make this policy easy to find, we make it available on our homepage and at every point where personally identifiable information may be requested. </p>
+                
                 <h4 className='sans font-bold text-[14px] leading-[1.5em] mb-[22px]'>1. HOW WE MODIFY THIS PRIVACY POLICY</h4>
                 <div className='mb-[26px]'>
                     <h3 className='inline mr-[5px] ubuntu text-[14px] font-bold'>1.1 Generally.</h3>
@@ -280,8 +281,16 @@ export default function PrivacyPolicy() {
                 <p className='text-[14px] ubuntu leading-[21px] tracking-[0px]'>This website may contain links to other websites operated by our joint venture marketing partners.  If you do click on any of the links to their websites or accept any of their promotional offers, your click-through information and any information that you provide in the process of registration or purchase will be transferred to these websites.  We have no responsibility or liability for the policies and practices of these websites.  You should be careful to review any privacy policies posted on any of these websites before providing information to them.</p>
 
                 <h4 className='sans font-bold text-[14px] leading-[1.5em] mb-[22px] mt-[22px]'>18. CHILDREN'S ONLINE POLICY</h4>
-                <p className='text-[14px] ubuntu leading-[21px] tracking-[0px]'>We are committed to preserving online privacy for all of its website visitors, including children. This website is a general audience website. Consistent with the Children’s Online Privacy Protection Act (COPPA), we will not knowingly collect any information from, or sell to, children under the age of 13.  If you are a parent or guardian who has discovered that your child under the age of 13 has submitted his or her personally identifiable information without your permission or consent, we will remove the information from our active list, at your request. California residents under 16 years of age may have additional rights regarding the collection and sale of their personal information. To request the removal of your child’s information, please contact our website as provided below under “Contact Us,” and be sure to include in your message the same login information that your child submitted.</p>
+                <p className='mb-[47px] text-[14px] ubuntu leading-[21px] tracking-[0px]'>We are committed to preserving online privacy for all of its website visitors, including children. This website is a general audience website. Consistent with the Children’s Online Privacy Protection Act (COPPA), we will not knowingly collect any information from, or sell to, children under the age of 13.  If you are a parent or guardian who has discovered that your child under the age of 13 has submitted his or her personally identifiable information without your permission or consent, we will remove the information from our active list, at your request. California residents under 16 years of age may have additional rights regarding the collection and sale of their personal information. To request the removal of your child’s information, please contact our website as provided below under “Contact Us,” and be sure to include in your message the same login information that your child submitted.</p>
 
+                <div>
+                    <h3 className='mb-[24px] ubuntu text-[14px] font-bold'>CONTACT US</h3>
+                    <p className='mb-[24px] ubuntu text-[14px] font-bold'>If you have any questions regarding these Terms of Use, please contact the owner and operator of this website business at:</p>
+                    <p className='mb-[1px] ubuntu text-[14px] font-bold'>RoyalBook</p>
+                    <p className='mb-[1px] ubuntu text-[14px] font-bold'>7712 Aurora Ave N</p>
+                    <p className='mb-[1px] ubuntu text-[14px] font-bold'>Seattle, WA 98103</p>
+                    <p className='mb-[1px] ubuntu text-[14px] font-bold'>Email: <a className='underline' href='support@royalbookapp.com'>support@royalbookapp.com</a></p>
+                </div>
 
             </div>
         </AnimatedPage>
