@@ -28,8 +28,8 @@ function App() {
               <Route path='clients' element={<Clients />}></Route>
               <Route path='pricing' element={<Pricing />}></Route>
             </Route>
-            {/* <Route path='privacy' element={<AnimatedPage><PrivacyPolicy /></AnimatedPage>}></Route> */}
-            {/* <Route path='term' element={<AnimatedPage><Terms /></AnimatedPage>}></Route> */}
+            <Route path='privacy' element={<AnimatedPage><PrivacyPolicy /></AnimatedPage>}></Route>
+            <Route path='term' element={<AnimatedPage><Terms /></AnimatedPage>}></Route>
           </Route>
           <Route path='login' element={<Login />}></Route>
           <Route path='signup' element={<Signup />}></Route>
