@@ -32,10 +32,7 @@ function App() {
           <Route path='privacy' element={<AnimatedPage><PrivacyPolicy /></AnimatedPage>}></Route>
           <Route path='term' element={<AnimatedPage><Terms /></AnimatedPage>}></Route>
           <Route path='profiles' element={<Profiles />}></Route>
-          <Route path="profiles/:id" element={<UserInfo />}>
-            <Route index element={<Information/>}/>
-            <Route path="application" element={<Information/>}/>
-          </Route>
+          <Route path="profiles/:id" element={<UserInfo />}></Route>
         </Route>
         <Route path='login' element={<Login />}></Route>
         <Route path='signup' element={<Signup />}></Route>
