@@ -36,13 +36,13 @@ export default function Information(props) {
                     <GoogleMaps lat={props?.user?.location._lat} lng={props?.user?.location._long} />
                 </div>
                 <div className='absolute top-[18%] left-[3%]'>
-                    <p className='ubuntu text-white'><span className='font-bold'>Monday:</span>{` ${props?.user["1"].start}AM - ${props?.user["1"].end}PM`}</p>
-                    <p className='ubuntu text-white'><span className='font-bold'>Tuesday:</span>{` ${props?.user["2"].start}AM - ${props?.user["2"].end}PM`}</p>
-                    <p className='ubuntu text-white'><span className='font-bold'>Wednesday:</span>{` ${props?.user["3"].start}AM - ${props?.user["3"].end}PM`}</p>
-                    <p className='ubuntu text-white'><span className='font-bold'>Thursday:</span>{` ${props?.user["4"].start}AM - ${props?.user["4"].end}PM`}</p>
-                    <p className='ubuntu text-white'><span className='font-bold'>Friday:</span>{` ${props?.user["5"].start}AM - ${props?.user["5"].end}PM`}</p>
-                    <p className='ubuntu text-white'><span className='font-bold'>Saturday:</span>{` ${props?.user["6"].start}AM - ${props?.user["6"].end}PM`}</p>
-                    <p className='ubuntu text-white'><span className='font-bold'>Sunday:</span>{` ${props?.user["7"].start}AM - ${props?.user["7"].end}PM`}</p>
+                    <p className='ubuntu text-white'><span className='font-bold'>Monday:</span>{` ${props?.user["1"]?.start}AM - ${props?.user["1"]?.end}PM`}</p>
+                    <p className='ubuntu text-white'><span className='font-bold'>Tuesday:</span>{` ${props?.user["2"]?.start}AM - ${props?.user["2"]?.end}PM`}</p>
+                    <p className='ubuntu text-white'><span className='font-bold'>Wednesday:</span>{` ${props?.user["3"]?.start}AM - ${props?.user["3"]?.end}PM`}</p>
+                    <p className='ubuntu text-white'><span className='font-bold'>Thursday:</span>{` ${props?.user["4"]?.start}AM - ${props?.user["4"]?.end}PM`}</p>
+                    <p className='ubuntu text-white'><span className='font-bold'>Friday:</span>{` ${props?.user["5"]?.start}AM - ${props?.user["5"]?.end}PM`}</p>
+                    <p className='ubuntu text-white'><span className='font-bold'>Saturday:</span>{` ${props?.user["6"]?.start}AM - ${props?.user["6"]?.end}PM`}</p>
+                    <p className='ubuntu text-white'><span className='font-bold'>Sunday:</span>{` ${props?.user["7"]?.start}AM - ${props?.user["7"]?.end}PM`}</p>
                 </div>
             </div>
         </div>
