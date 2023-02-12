@@ -68,7 +68,7 @@ export default function Information(props) {
                 <h3 className='sans font-bold text-[24px] mb-[8px]'>Services</h3>
                 {services.map((s,index)=>{
                     return(
-                        <div style={{boxShadow:"1px 1px 4px rgba(0,0,0,0.2)"}} className=' flex items-center min-w-[300px] xsm:w-[90vw] sm:w-[80vw] md:w-[60vw] w-[32.552083333333336vw] min-h-[80px] my-[20px] p-[5px] roudned-[10px]'>
+                        <div key={index} style={{boxShadow:"1px 1px 4px rgba(0,0,0,0.2)"}} className=' flex items-center min-w-[300px] xsm:w-[90vw] sm:w-[80vw] md:w-[60vw] w-[32.552083333333336vw] min-h-[80px] my-[20px] p-[5px] roudned-[10px]'>
                             <div className='flex-1'>
                                 <h3 className='sans font-bold text-[18px]'>{s.name}</h3>
                                 <p className='sans text-[14px] font-bold'>{`${s.minutes} minutes`}</p>
