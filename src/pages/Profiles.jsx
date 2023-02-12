@@ -11,29 +11,6 @@ export default function Profiles() {
     const [user, setUsers] = useState([]);
     const [start,setStart]=useState(0);
 
-    const fetch = async () => {
-        setUsers([]);
-        console.log("2222222222222222")
-        const querySnapshot = await getDocs(collection(db, "Users"));
-        querySnapshot.forEach((doc) => {
-            setUsers((prevState) => [...prevState, doc.data()]);
-        });
-        // const usersRef = collection(db, "Users");
-        // const q = query(usersRef,orderBy("firstname") ,startAt(start),limit(start+10));
-        // const querySnapshot = await getDocs(q);
-        // querySnapshot.forEach((doc) => {
-        //     setUsers((prevState) => [...prevState, doc.data()]);
-        // });
-    }
-
-    // const loadMoreHandler=()=>{
-    //     setStart(start+10)
-    // }
-
-    useEffect(() => {
-        console.log("1111111111111111")
-        fetch();
-    }, [])
 
     const profileClickHandler=(u)=>{
         navigate(`/profiles/${u.firstname}`,{state:{u}});
