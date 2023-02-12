@@ -7,6 +7,7 @@ import GoogleMaps from '../Utils/GoogleMaps';
 
 export default function Information(props) {
     const [services,setService]=useState([])
+    console.log(props)
 
     const fetch=async()=>{
         setService([]);

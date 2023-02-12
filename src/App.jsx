@@ -12,7 +12,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Profiles from "./pages/Profiles";
+// import Profiles from "./pages/Profiles";
 import UserInfo from "./pages/UserInfo";
 import Information from "./components/UserInfo/Information";
 
@@ -31,7 +31,7 @@ function App() {
           </Route>
           <Route path='privacy' element={<AnimatedPage><PrivacyPolicy /></AnimatedPage>}></Route>
           <Route path='term' element={<AnimatedPage><Terms /></AnimatedPage>}></Route>
-          <Route path='profiles' element={<Profiles />}></Route>
+          {/* <Route path='profiles' element={<Profiles />}></Route> */}
           <Route path=":username" element={<UserInfo />}></Route>
         </Route>
         <Route path='login' element={<Login />}></Route>

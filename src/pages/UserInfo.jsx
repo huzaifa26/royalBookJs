@@ -6,21 +6,28 @@ import { useParams, useLocation } from 'react-router-dom';
 import Apps from '../components/UserInfo/Apps';
 import Information from '../components/UserInfo/Information';
 import { db } from '../components/Utils/firebase';
+import Loader from '../components/Utils/Loader';
 
 export default function UserInfo() {
     const params = useParams();
-    const [user, setUsers] = useState();
+    const [user, setUsers] = useState({});
+    const [loading,setLoading]=useState(true)
     // const [changeTabs, setChangeTabs] = useState(false);
 
     const fetch = async () => {
         const docRef = doc(db, "Usernames", params.username);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
-            const userRef = doc(db, "Users", docSnap.data().id)
-            const userSnap = await getDoc(userRef);
-            setUsers((prev)=>{
-                return userSnap.data()
-            })
+            try{
+                const userRef = doc(db, "Users", docSnap.data().id)
+                const userSnap = await getDoc(userRef);
+                setUsers((prev)=>{
+                    setLoading(false);
+                    return userSnap.data()
+                })
+            }catch(e){
+                console.log(e)
+            }
         } else {
             console.log("No such document!");
         }
@@ -29,6 +36,10 @@ export default function UserInfo() {
     useEffect(() => {
         fetch()
     }, [])
+
+    if (loading){
+        return <Loader />
+    }
 
     return (
         <div className='w-[63.802083333333336vw] xsm:w-[95%] sm:w-[90%] pt-[10px] m-auto'>
