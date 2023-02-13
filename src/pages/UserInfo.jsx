@@ -22,6 +22,7 @@ export default function UserInfo() {
                 const userRef = doc(db, "Users", docSnap.data().id)
                 const userSnap = await getDoc(userRef);
                 setUsers((prev)=>{
+                    console.log(userSnap.data())
                     setLoading(false);
                     return userSnap.data()
                 })
@@ -60,7 +61,7 @@ export default function UserInfo() {
                 </div>
             </div>
             <p className='w-[500px] xsm:w-[100%] sm:w-[100%] text-center ubuntu text-[14px] my-[12px] px-[50px]'>{user?.bio}</p>
-            <div className='flex gap-[30px] '>
+            <div className='flex xsm:gap-[10px] sm:gap-[15px] gap-[25px] w-[500px] xsm:w-[100%] sm:w-[100%] justify-center'>
                 <button className='w-[170px] text-white  h-[40px] rounded-full bg-[#6581F8]'>Book</button>
                 <button className='w-[170px] text-white  h-[40px] rounded-full bg-[#6581F8]'>Contact</button>
             </div>
