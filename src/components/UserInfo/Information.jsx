@@ -4,6 +4,9 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { db } from '../Utils/firebase';
 import GoogleMaps from '../Utils/GoogleMaps';
+// const moment = require('moment-timezone');
+import moment from 'moment-timezone';
+
 
 export default function Information(props) {
     const [services, setService] = useState([])
@@ -32,15 +35,10 @@ export default function Information(props) {
         return camelCased;
     }
 
-    const converDate = (time) => {
-        let newTime = time.split(":");
-        const date = new Date(2023, 01, 20, newTime[0], newTime[1], 0)
-        return new Intl.DateTimeFormat('default', {
-            hour: 'numeric',
-            minute: 'numeric',
-            hour12: true,
-            timeZone: "Europe/Dublin"
-        }).format(date)
+    const converDate = (timeString) => {
+        const originalTime = moment.tz(timeString, 'HH:mm', 'Europe/Dublin');
+        const formattedTime = originalTime.format('h:mm a');
+        return formattedTime
     }
 
     return (
@@ -65,13 +63,13 @@ export default function Information(props) {
                 {props?.user["1"] !== undefined &&
                     <div style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0.6) , rgba(0,0,0,0.1))" }} className='flex items-center absolute w-[100%] h-[100%]  top-[0%] left-[0%] px-[30px]'>
                         <div className='h-auto'>
-                            <p className='ubuntu text-white'><span className='font-bold'>Monday:</span>{props?.user[1]?.start !== props?.user[1]?.end ? ` ${converDate(props?.user["1"]?.start)} - ${converDate(props?.user["1"]?.end)}`:` Closed`}</p>
-                            <p className='ubuntu text-white'><span className='font-bold'>Tuesday:</span>{props?.user[2]?.start !== props?.user[2]?.end ? ` ${converDate(props?.user["2"]?.start)} - ${converDate(props?.user["2"]?.end)}`:` Closed`}</p>
-                            <p className='ubuntu text-white'><span className='font-bold'>Wednesday:</span>{props?.user[3]?.start !== props?.user[3]?.end ? ` ${converDate(props?.user["3"]?.start)} - ${converDate(props?.user["3"]?.end)}`:` Closed`}</p>
-                            <p className='ubuntu text-white'><span className='font-bold'>Thursday:</span>{props?.user[4]?.start !== props?.user[4]?.end ? ` ${converDate(props?.user["4"]?.start)} - ${converDate(props?.user["4"]?.end)}`:` Closed`}</p>
-                            <p className='ubuntu text-white'><span className='font-bold'>Friday:</span>{props?.user[5]?.start !== props?.user[5]?.end ? ` ${converDate(props?.user["5"]?.start)} - ${converDate(props?.user["5"]?.end)}`:` Closed`}</p>
-                            <p className='ubuntu text-white'><span className='font-bold'>Saturday:</span>{props?.user[6]?.start !== props?.user[6]?.end ? ` ${converDate(props?.user["6"]?.start)} - ${converDate(props?.user["6"]?.end)}`:` Closed`}</p>
-                            <p className='ubuntu text-white'><span className='font-bold'>Sunday:</span>{props?.user[7]?.start !== props?.user[7]?.end ? ` ${converDate(props?.user["7"]?.start)} - ${converDate(props?.user["7"]?.end)}`:` Closed`}</p>
+                            <p className='ubuntu text-white'><span className='font-bold'>Monday:</span>{props?.user[1]?.start !== props?.user[1]?.end ? ` ${converDate(props?.user["1"]?.start)} - ${converDate(props?.user["1"]?.end)}` : ` Closed`}</p>
+                            <p className='ubuntu text-white'><span className='font-bold'>Tuesday:</span>{props?.user[2]?.start !== props?.user[2]?.end ? ` ${converDate(props?.user["2"]?.start)} - ${converDate(props?.user["2"]?.end)}` : ` Closed`}</p>
+                            <p className='ubuntu text-white'><span className='font-bold'>Wednesday:</span>{props?.user[3]?.start !== props?.user[3]?.end ? ` ${converDate(props?.user["3"]?.start)} - ${converDate(props?.user["3"]?.end)}` : ` Closed`}</p>
+                            <p className='ubuntu text-white'><span className='font-bold'>Thursday:</span>{props?.user[4]?.start !== props?.user[4]?.end ? ` ${converDate(props?.user["4"]?.start)} - ${converDate(props?.user["4"]?.end)}` : ` Closed`}</p>
+                            <p className='ubuntu text-white'><span className='font-bold'>Friday:</span>{props?.user[5]?.start !== props?.user[5]?.end ? ` ${converDate(props?.user["5"]?.start)} - ${converDate(props?.user["5"]?.end)}` : ` Closed`}</p>
+                            <p className='ubuntu text-white'><span className='font-bold'>Saturday:</span>{props?.user[6]?.start !== props?.user[6]?.end ? ` ${converDate(props?.user["6"]?.start)} - ${converDate(props?.user["6"]?.end)}` : ` Closed`}</p>
+                            <p className='ubuntu text-white'><span className='font-bold'>Sunday:</span>{props?.user[7]?.start !== props?.user[7]?.end ? ` ${converDate(props?.user["7"]?.start)} - ${converDate(props?.user["7"]?.end)}` : ` Closed`}</p>
                         </div>
                     </div>}
             </div>
