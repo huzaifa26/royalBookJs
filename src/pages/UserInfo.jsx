@@ -19,7 +19,7 @@ export default function UserInfo() {
     useEffect(() => {
         document.title = `RoyalBook | ${params.username}`;
         return ()=>{
-            document.title = `RoyalBook`;
+            // document.title = `RoyalBook`;
         }
     }, []);
 
