@@ -26,6 +26,10 @@
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjQY4CjdsL-C83_sSbLzP4cwDy8dkSmmY&libraries=places"></script>
+  <script>
+    console.log(window.location);
+    document.title = "RoyalBook | " + window.location.pathname.substring(1,window.location.pathname.length-1)
+  </script>
 </body>
 
 </html>
