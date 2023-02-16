@@ -17,9 +17,9 @@ export default function UserInfo() {
     // const [changeTabs, setChangeTabs] = useState(false);
 
     useEffect(() => {
-        // document.title = `RoyalBook | ${params.username}`;
+        document.title = `RoyalBook | ${params.username}`;
         return ()=>{
-            // document.title = `RoyalBook`;
+            document.title = `RoyalBook`;
         }
     }, []);
 
