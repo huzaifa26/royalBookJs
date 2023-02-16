@@ -11,14 +11,14 @@ import Loader from '../components/Utils/Loader';
 
 export default function UserInfo() {
     const params = useParams();
-    const navigate=useNavigate();
+    const navigate = useNavigate();
     const [user, setUsers] = useState({});
     const [loading, setLoading] = useState(true)
     // const [changeTabs, setChangeTabs] = useState(false);
 
     useEffect(() => {
         document.title = `RoyalBook | ${params.username}`;
-        return ()=>{
+        return () => {
             document.title = `RoyalBook`;
         }
     }, []);
@@ -30,7 +30,7 @@ export default function UserInfo() {
             try {
                 const userRef = doc(db, "Users", docSnap.data().id)
                 const userSnap = await getDoc(userRef);
-                if(!userSnap.data().barber){
+                if (!userSnap.data().barber) {
                     navigate("/")
                 }
                 setUsers((prev) => {
@@ -43,6 +43,7 @@ export default function UserInfo() {
             }
         } else {
             console.log("No such document!");
+            navigate("/")
         }
     }
 
