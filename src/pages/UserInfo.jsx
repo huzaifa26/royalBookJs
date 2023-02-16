@@ -2,6 +2,7 @@ import { getDoc, doc, getDocs, collection } from 'firebase/firestore';
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useParams, useLocation } from 'react-router-dom';
 import Apps from '../components/UserInfo/Apps';
 import Information from '../components/UserInfo/Information';
@@ -10,23 +11,34 @@ import Loader from '../components/Utils/Loader';
 
 export default function UserInfo() {
     const params = useParams();
+    const navigate=useNavigate();
     const [user, setUsers] = useState({});
-    const [loading,setLoading]=useState(true)
+    const [loading, setLoading] = useState(true)
     // const [changeTabs, setChangeTabs] = useState(false);
+
+    useEffect(() => {
+        document.title = `RoyalBook | ${params.username}`;
+        return ()=>{
+            document.title = `RoyalBook`;
+        }
+    }, []);
 
     const fetch = async () => {
         const docRef = doc(db, "Usernames", params.username);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
-            try{
+            try {
                 const userRef = doc(db, "Users", docSnap.data().id)
                 const userSnap = await getDoc(userRef);
-                setUsers((prev)=>{
+                if(!userSnap.data().barber){
+                    navigate("/")
+                }
+                setUsers((prev) => {
                     console.log(userSnap.data())
                     setLoading(false);
                     return userSnap.data()
                 })
-            }catch(e){
+            } catch (e) {
                 console.log(e)
             }
         } else {
@@ -38,7 +50,7 @@ export default function UserInfo() {
         fetch()
     }, [])
 
-    if (loading){
+    if (loading) {
         return <Loader />
     }
 
