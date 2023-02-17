@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>RoyalBook</title>
-  <meta property="og:title" content="RoyalBook"/>
+  <!-- <meta property="og:title" content="RoyalBook"/> -->
   <link rel="icon" type="image/svg+xml" href="/AppImage (5)_edited.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,23 +29,22 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjQY4CjdsL-C83_sSbLzP4cwDy8dkSmmY&libraries=places"></script>
   <script>
-    let username=window.location.pathname.length>1 && window.location.pathname.substring(1,window.location.pathname.length-1)
-    let title = `RoyalBook | ${username}`;
-    if(username === false){
-      username="";
-      title="RoyalBook";
-    }
-    const metaTags = document.getElementsByTagName("meta");
+    // let username=window.location.pathname.length>1 && window.location.pathname.substring(1,window.location.pathname.length-1)
+    // let title = `RoyalBook | ${username}`;
+    // if(username === false){
+    //   username="";
+    //   title="RoyalBook";
+    // }
+    // const metaTags = document.getElementsByTagName("meta");
 
-    // Find the existing title meta tag and update its content
-    for (let i = 0; i < metaTags.length; i++) {
-      const tag = metaTags[i];
-      if (tag.getAttribute("property") === "og:title") {
-        tag.setAttribute("content", title);
-        tag.setAttribute("key", title);
-        break;
-      }
-    }
+    // // Find the existing title meta tag and update its content
+    // for (let i = 0; i < metaTags.length; i++) {
+    //   const tag = metaTags[i];
+    //   if (tag.getAttribute("property") === "og:title") {
+    //     tag.setAttribute("content", title);
+    //     break;
+    //   }
+    // }
   </script>
 </body>
 
