@@ -14,30 +14,46 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 // import Profiles from "./pages/Profiles";
 import UserInfo from "./pages/UserInfo";
+import { useEffect } from "react";
+import { useState } from "react";
 // import Information from "./components/UserInfo/Information";
 
 function App() {
+  // useEffect(() => {
+    let username = window.location.pathname.length > 1 && window.location.pathname.substring(1, window.location.pathname.length - 1)
+    const [title, setTitle] = useState(`RoyalBook | ${username}`);
+
+    if (username === false) {
+      username = "";
+      setTitle("RoyalBook");
+    }
+
+  // }, [Window.location.pathname])
+
   return (
-    <div className="w-[calc(100vw - 100%)] m-auto">
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<AnimatedPage><Home /></AnimatedPage>}></Route>
-          <Route path='faq' element={<AnimatedPage><FAQ /></AnimatedPage>}>
-            <Route index element={<General />}></Route>
-            <Route path='account' element={<Account />}></Route>
-            <Route path='barbers' element={<Barbers />}></Route>
-            <Route path='clients' element={<Clients />}></Route>
-            <Route path='pricing' element={<Pricing />}></Route>
+    <>
+      <meta key="og:title" property="og:title" content={title} />
+      <div className="w-[calc(100vw - 100%)] m-auto">
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<AnimatedPage><Home /></AnimatedPage>}></Route>
+            <Route path='faq' element={<AnimatedPage><FAQ /></AnimatedPage>}>
+              <Route index element={<General />}></Route>
+              <Route path='account' element={<Account />}></Route>
+              <Route path='barbers' element={<Barbers />}></Route>
+              <Route path='clients' element={<Clients />}></Route>
+              <Route path='pricing' element={<Pricing />}></Route>
+            </Route>
+            <Route path='privacy' element={<AnimatedPage><PrivacyPolicy /></AnimatedPage>}></Route>
+            <Route path='term' element={<AnimatedPage><Terms /></AnimatedPage>}></Route>
+            {/* <Route path='profiles' element={<Profiles />}></Route> */}
+            <Route path=":username" element={<UserInfo />}></Route>
           </Route>
-          <Route path='privacy' element={<AnimatedPage><PrivacyPolicy /></AnimatedPage>}></Route>
-          <Route path='term' element={<AnimatedPage><Terms /></AnimatedPage>}></Route>
-          {/* <Route path='profiles' element={<Profiles />}></Route> */}
-          <Route path=":username" element={<UserInfo />}></Route>
-        </Route>
-        <Route path='login' element={<Login />}></Route>
-        <Route path='signup' element={<Signup />}></Route>
-      </Routes>
-    </div>
+          <Route path='login' element={<Login />}></Route>
+          <Route path='signup' element={<Signup />}></Route>
+        </Routes>
+      </div>
+    </>
   )
 }
 
