@@ -29,9 +29,12 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjQY4CjdsL-C83_sSbLzP4cwDy8dkSmmY&libraries=places"></script>
   <script>
-    const username=window.location.pathname.length>1 && window.location.pathname.substring(1,window.location.pathname.length-1)
-    console.log(username);
-    const title = `RoyalBook | ${username}`;
+    let username=window.location.pathname.length>1 && window.location.pathname.substring(1,window.location.pathname.length-1)
+    let title = `RoyalBook | ${username}`;
+    if(username === false){
+      username="";
+      title="RoyalBook";
+    }
     const metaTags = document.getElementsByTagName("meta");
 
     // Find the existing title meta tag and update its content
