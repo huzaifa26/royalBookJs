@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>RoyalBook</title>
@@ -19,6 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,6 +28,24 @@
   <script type="module" src="/src/main.jsx"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjQY4CjdsL-C83_sSbLzP4cwDy8dkSmmY&libraries=places"></script>
+  <script>
+    let username=window.location.pathname.length>1 && window.location.pathname.substring(1,window.location.pathname.length-1)
+    let title = `RoyalBook | ${username}`;
+    if(username === false){
+      username="";
+      title="RoyalBook";
+    }
+    const metaTags = document.getElementsByTagName("meta");
+
+    // Find the existing title meta tag and update its content
+    for (let i = 0; i < metaTags.length; i++) {
+      const tag = metaTags[i];
+      if (tag.getAttribute("property") === "og:title") {
+        tag.setAttribute("content", title);
+        break;
+      }
+    }
+  </script>
 </body>
 
 </html>
