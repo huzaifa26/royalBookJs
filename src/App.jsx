@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home';
 import FAQ from './pages/FAQ';
@@ -14,7 +14,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 // import Profiles from "./pages/Profiles";
 import UserInfo from "./pages/UserInfo";
-import Information from "./components/UserInfo/Information";
+// import Information from "./components/UserInfo/Information";
 
 function App() {
   return (

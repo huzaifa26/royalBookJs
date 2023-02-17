@@ -11,17 +11,37 @@ import Loader from '../components/Utils/Loader';
 
 export default function UserInfo() {
     const params = useParams();
+    const location = useLocation();
     const navigate = useNavigate();
     const [user, setUsers] = useState({});
     const [loading, setLoading] = useState(true)
     // const [changeTabs, setChangeTabs] = useState(false);
 
+
+    // useEffect(() => {
+    //     document.title = `RoyalBook | ${params.username}`;
+    //     return () => {
+    //         document.title = `RoyalBook`;
+    //     }
+    // }, []);
+
     useEffect(() => {
-        document.title = `RoyalBook | ${params.username}`;
-        return () => {
-            document.title = `RoyalBook`;
+        const title = `RoyalBook | ${params.username}`;
+        const metaTags = document.getElementsByTagName("meta");
+
+        // Find the existing title meta tag and update its content
+        for (let i = 0; i < metaTags.length; i++) {
+            const tag = metaTags[i];
+            if (tag.getAttribute("property") === "og:title") {
+                tag.setAttribute("content", title);
+                break;
+            }
         }
-    }, []);
+            document.title = `RoyalBook | ${params.username}`;
+            return () => {
+                document.title = `RoyalBook`;
+            }
+    }, [location.pathname, params.username]);
 
     const fetch = async () => {
         const docRef = doc(db, "Usernames", params.username);
