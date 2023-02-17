@@ -19,15 +19,14 @@ import { useState } from "react";
 // import Information from "./components/UserInfo/Information";
 
 function App() {
+  let username = window.location.pathname.length > 1 && window.location.pathname.substring(1, window.location.pathname.length - 1)
+  const [title, setTitle] = useState(`RoyalBook | ${username}`);
   useEffect(() => {
-    let username = window.location.pathname.length > 1 && window.location.pathname.substring(1, window.location.pathname.length - 1)
-    const [title, setTitle] = useState(`RoyalBook | ${username}`);
-
     if (username === false) {
       username = "";
       setTitle("RoyalBook");
     }
-  }, [Window.location.pathname])
+  }, [Window?.location?.pathname])
 
   return (
     <>
