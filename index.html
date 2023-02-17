@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta property="og:title" content="RoyalBook | Huzaifa"/>
+  <meta property="og:title" content="RoyalBook | Huzaifa" />
   <link rel="icon" type="image/svg+xml" href="/AppImage (5)_edited.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,22 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjQY4CjdsL-C83_sSbLzP4cwDy8dkSmmY&libraries=places"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjQY4CjdsL-C83_sSbLzP4cwDy8dkSmmY&libraries=places"></script>
+  <script>
+    const username=window.location.pathname.length>1 && window.location.pathname.substring(1,window.location.pathname.length-1)
+    console.log(username);
+    const title = `RoyalBook | ${username}`;
+    const metaTags = document.getElementsByTagName("meta");
+
+    // Find the existing title meta tag and update its content
+    for (let i = 0; i < metaTags.length; i++) {
+      const tag = metaTags[i];
+      if (tag.getAttribute("property") === "og:title") {
+        tag.setAttribute("content", title);
+        break;
+      }
+    }
   </script>
 </body>
 
